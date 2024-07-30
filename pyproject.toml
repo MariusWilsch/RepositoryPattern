@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "repositorypattern"
+version = "0.1.0"
+description = "A design pattern implementation of the repository pattern thightly coupled with supabase. It implements a typical crud api and allows for dervied classes for speacial features beyond crud. It also centerliases error management"
+authors = ["mwilsch <marius.santiago.wilsch@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+supabase = "^2.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
