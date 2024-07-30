@@ -49,7 +49,7 @@ class BaseRepository(ABC):
         self.supabase = SupabaseSingleton.get_instance()
         self.logger = logger
 
-    def _execute_query(self, operation: str, query):
+    def _execute_query(self, operation: str, query): # needs documentation
         try:
             result = query.execute()
             self.logger.info(
@@ -128,3 +128,6 @@ class BaseRepository(ABC):
             value = filter_condition["value"]
             query = getattr(query, operator.value)(field, value)
         return self._execute_query("filter", query)
+
+
+# needs a little of specific cases, like getting only one record, more will appear as long as we use it further more in the future
