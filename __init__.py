@@ -1,4 +1,4 @@
-from .base_repository import (
+from .base_repository.base_repository import (
     BaseRepository,
     SupabaseSingleton,
     FilterOperator,
